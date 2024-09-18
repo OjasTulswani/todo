@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import InputField from '../components/InputField'
 import { Todo } from '../model';
+import TodoList from '../components/TodoList';
 
 const Homepage = () => {
     //for value
@@ -21,12 +22,13 @@ const Homepage = () => {
 
   return (
     <>
-      <div className='w-screen h-screen flex flex-col items-center bg-gray-600 font-neucha'>
+      <div className='flex flex-col items-center  font-neucha'>
           <span className='text-uppercase text-white z-1 text-center mb-10 mt-10 text-4xl md:mb-6 md:mt-6 md:text-3xl'>
             TODO
           </span>
           <InputField todo={todo} setTodo={setTodo} handleAdd = {handleAdd}
            />
+          <TodoList todos={todos} setTodos={setTodos}/>
       </div>
     </>
   )

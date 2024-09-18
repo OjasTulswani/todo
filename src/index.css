@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-color: rgba(11, 2, 2, 0.851);
+}
+
+.todos{
+    width: 90%;
+}
+
+.single{
+    width: 90%;
+}
